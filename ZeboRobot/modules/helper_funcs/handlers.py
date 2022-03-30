@@ -1,6 +1,6 @@
-import EmikoRobot.modules.sql.blacklistusers_sql as sql
-from EmikoRobot import ALLOW_EXCL
-from EmikoRobot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
+import ZeboRobot.modules.sql.blacklistusers_sql as sql
+from ZeboRobot import ALLOW_EXCL
+from ZeboRobot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
 
 from telegram import Update
 from telegram.ext import CommandHandler, MessageHandler, RegexHandler, Filters
