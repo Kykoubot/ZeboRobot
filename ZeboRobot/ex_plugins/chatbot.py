@@ -1,4 +1,4 @@
-from Zeborobot.mongo import client as db_x
+from ZeboRobot.mongo import client as db_x
 
 lydia = db_x["CHATBOT"]
 
