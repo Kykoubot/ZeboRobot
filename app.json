@@ -10,7 +10,7 @@
       ],
     
    "logo":    "https://telegra.ph/file/8fa31785d444aec59f484.jpg",  
-   "repository": "https://github.com/kykoubot/https://github.com/kykoubot/Zebobot",
+   "repository": "https://github.com/kykoubot/https://github.com/kykoubot/Zeborobot",
    "addons": [
           {
          "options": {
@@ -84,7 +84,7 @@
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
          "required": true,
-         "value": "mongodb+srv://Adifajarf54321:Adifajarf54321@projectzeaa.b5toc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+         "value": ""
       },
       "IBM_WATSON_CRED_URL": {
          "description": "This is required for the speech to text module. Get your USERNAME from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
@@ -182,7 +182,7 @@
       "URL": {
          "description": "The Heroku App URL :-  https://<appname>.herokuapp.com/",
          "required": false,
-         "value": "https://<>.herokuapp.com/"
+         "value": "https://<appname>.herokuapp.com/"
       },
       "NO_LOAD": {
          "description": "Dont load these modules cause they shit, space separation",
