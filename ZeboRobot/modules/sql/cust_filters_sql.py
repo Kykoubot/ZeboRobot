@@ -2,8 +2,8 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Boolean, distinct, func, Integer
 
-from EmikoRobot.modules.helper_funcs.msg_types import Types
-from EmikoRobot.modules.sql import BASE, SESSION
+from ZeboRobot.modules.helper_funcs.msg_types import Types
+from ZeboRobot.modules.sql import BASE, SESSION
 
 
 class CustomFilters(BASE):
