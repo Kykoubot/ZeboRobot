@@ -5,9 +5,9 @@ from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from EmikoRobot import DRAGONS, dispatcher
-from EmikoRobot.modules.disable import DisableAbleCommandHandler
-from EmikoRobot.modules.helper_funcs.chat_status import (
+from ZeboRobot import DRAGONS, dispatcher
+from ZeboRobot.modules.disable import DisableAbleCommandHandler
+from ZeboRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_pin,
     can_promote,
@@ -16,14 +16,14 @@ from EmikoRobot.modules.helper_funcs.chat_status import (
     ADMIN_CACHE,
 )
 
-from EmikoRobot.modules.helper_funcs.admin_rights import user_can_changeinfo, user_can_promote
-from EmikoRobot.modules.helper_funcs.extraction import (
+from ZeboRobot.modules.helper_funcs.admin_rights import user_can_changeinfo, user_can_promote
+from ZeboRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from EmikoRobot import SUPPORT_CHAT
-from EmikoRobot.modules.log_channel import loggable
-from EmikoRobot.modules.helper_funcs.alternate import send_message
+from ZeboRobot import SUPPORT_CHAT
+from ZeboRobot.modules.log_channel import loggable
+from ZeboRobot.modules.helper_funcs.alternate import send_message
 
 
 @bot_admin
