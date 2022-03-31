@@ -4,15 +4,15 @@ import re
 
 from telegram import Message, Chat, Update, User, ChatPermissions
 
-from EmikoRobot import TIGERS, WOLVES, dispatcher
-from EmikoRobot.modules.helper_funcs.chat_status import (
+from ZeboRobot import TIGERS, WOLVES, dispatcher
+from ZeboRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from EmikoRobot.modules.log_channel import loggable
-from EmikoRobot.modules.sql import antiflood_sql as sql
+from ZeboRobot.modules.log_channel import loggable
+from ZeboRobot.modules.sql import antiflood_sql as sql
 from telegram.error import BadRequest
 from telegram.ext import (
     CallbackContext,
@@ -22,10 +22,10 @@ from telegram.ext import (
     MessageHandler,
 )
 from telegram.utils.helpers import mention_html
-from EmikoRobot.modules.helper_funcs.string_handling import extract_time
-from EmikoRobot.modules.connection import connected
-from EmikoRobot.modules.helper_funcs.alternate import send_message
-from EmikoRobot.modules.sql.approve_sql import is_approved
+from ZeboRobot.modules.helper_funcs.string_handling import extract_time
+from ZeboRobot.modules.connection import connected
+from ZeboRobot.modules.helper_funcs.alternate import send_message
+from ZeboRobot.modules.sql.approve_sql import is_approved
 
 FLOOD_GROUP = 3
 
@@ -86,7 +86,7 @@ def check_flood(update, context) -> str:
             tag = "TMUTE"
         send_message(
             update.effective_message,
-            "Ninu Ninu! Ninu Ninu!\n{}!".format(execstrings),
+            "Ninu Ninu! Ninu Ninu!🚨\n{}!".format(execstrings),
         )
 
         return (
