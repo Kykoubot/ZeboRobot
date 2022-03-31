@@ -9,8 +9,8 @@
          "naorobot"
       ],
     
-   "logo":    "https://telegra.ph/file/8fa31785d444aec59f484.jpg",  
-   "repository": "https://github.com/kykoubot/https://github.com/kykoubot/Zeborobot",
+   "logo":    "https://telegra.ph/file/47002f49f5699ac210988.jpg",
+   "repository": "https://github.com/kykoubot/https://github.com/kykoubot/ZeboRobot",
    "addons": [
           {
          "options": {
@@ -31,17 +31,17 @@
       "TOKEN": {
          "description": "Your bot token. Get one from @BotFather duh",
          "required": true,
-         "value": "5291162740:AAH2aD0zW4BqhWJZxjJeR8bE0xbZqgeKvjY"
+         "value": ""
       },
       "API_ID": {
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": "17130435"
+         "value": ""
       },
       "API_HASH": {
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": "e1ab6667f60e1232721a1f14f41bd142"
+         "value": ""
       },    
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
@@ -69,7 +69,7 @@
 
       "BOT_ID": {
          "description": "to get your bot_id using other bot or userbot",
-         "value": "5291162740"
+         "value": ""
       },
 
       "OWNER_USERNAME": {
@@ -129,7 +129,7 @@
       "ERROR_LOG": {
          "description": "ID of log for show error.",
          "required": false,
-         "value": "-1001626676042"
+         "value": ""
      },
         "ARQ_API": {
             "description": "Get this from @ARQRobot.",
