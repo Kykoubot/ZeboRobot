@@ -61,8 +61,6 @@ async def boobs(client, message):
     await a.edit("`Mengirim foto bugil...`")
     nsfw = requests.get("http://api.oboobs.ru/noise/1").json()[0]["preview"]
     urllib.request.urlretrieve("http://media.oboobs.ru/{}".format(nsfw), pic_loc)
-    await client.send_photo(
-        message.chat.id, pic_loc, caption="**Dosa asu tobat**"
-    )
+    await client.send_photo(message.chat.id, pic_loc, caption="**Dosa asu tobat**")
     os.remove(pic_loc)
     await a.delete()

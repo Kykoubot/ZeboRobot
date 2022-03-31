@@ -12,9 +12,8 @@
 # ========================×========================
 
 
-
 TRUTH = (
-    "Belanjaan apa yang paling di sesali?", 
+    "Belanjaan apa yang paling di sesali?",
     "Apa benda yang paling kamu inginkan?",
     "Kalau bisa punya kekuatan super, kamu pengen bisa apa?",
     "kalau bisa mengendalikan mimpi, kamu pengen mimpi yg seperti apa?",

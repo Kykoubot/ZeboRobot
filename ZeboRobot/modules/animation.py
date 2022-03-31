@@ -180,9 +180,9 @@ love_siren = [
 police_anim = [
     "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
     "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
-    "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵", 
+    "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
     "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
-    "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵", 
+    "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
     "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
     "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
     "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
@@ -372,7 +372,9 @@ def cinta(update: Update, context: CallbackContext):
     for x in range(EDIT_TIMES):
         msg.edit_text(server_cinta[x % 10])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text("Cintaku Sekarang Sepenuhnya Terkirim Padamu, Dan Sekarang Aku Sangat Mencintai Mu, I Love You 💞")
+    msg.edit_text(
+        "Cintaku Sekarang Sepenuhnya Terkirim Padamu, Dan Sekarang Aku Sangat Mencintai Mu, I Love You 💞"
+    )
 
 
 @user_admin
@@ -437,12 +439,14 @@ def fadmin(update: Update, context: CallbackContext):
 
 KILL_HANDLER = DisableAbleCommandHandler("kill", kill, run_async=True)
 FADMIN_HANDLER = DisableAbleCommandHandler("fadmin", fadmin, run_async=True)
-CERITACINTA_HANDLER = DisableAbleCommandHandler("ceritacinta", ceritacinta, run_async=True)
+CERITACINTA_HANDLER = DisableAbleCommandHandler(
+    "ceritacinta", ceritacinta, run_async=True
+)
 LOVE_HANDLER = DisableAbleCommandHandler("love", love, run_async=True)
 POLICE_HANDLER = DisableAbleCommandHandler("police", police, run_async=True)
 HACK_HANDLER = DisableAbleCommandHandler("hack", hack, run_async=True)
-CINTA_HANDLER = DisableAbleCommandHandler ("cinta", cinta, run_async=True)
-SANTET_HANDLER = DisableAbleCommandHandler ("santet", santet, run_async=True)
+CINTA_HANDLER = DisableAbleCommandHandler("cinta", cinta, run_async=True)
+SANTET_HANDLER = DisableAbleCommandHandler("santet", santet, run_async=True)
 BOMBS_HANDLER = DisableAbleCommandHandler("bombs", bombs, run_async=True)
 MOONANIMATION_HANDLER = DisableAbleCommandHandler("moon", moonanimation, run_async=True)
 CLOCKANIMATION_HANDLER = DisableAbleCommandHandler(
@@ -481,8 +485,7 @@ __command_list__ = [
     "earthanimation",
     "blockanimation",
     "kill",
-    "fadmin"
-    "ceritacinta",
+    "fadmin" "ceritacinta",
 ]
 __handlers__ = [
     LOVE_HANDLER,

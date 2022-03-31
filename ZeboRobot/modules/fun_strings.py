@@ -24,7 +24,7 @@ RUN_STRINGS = (
     "Semoga peluang akan selalu menguntungkan Anda.",
     "Kata-kata terakhir yang terkenal.",
     "Dan mereka menghilang selamanya, tidak pernah terlihat lagi.",
-    "\"Oh, lihat aku! Aku sangat keren, aku bisa lari dari bot!\" - orang ini",
+    '"Oh, lihat aku! Aku sangat keren, aku bisa lari dari bot!" - orang ini',
     "Ya ya, cukup ketuk /kickme saja 😏",
     "Ini, ambil cincin ini dan pergi ke Mordor saat Anda berada di sana.",
     "Legenda mengatakan, mereka masih berlari...",
@@ -60,8 +60,8 @@ SLAP_SAITAMA_TEMPLATES = (
     "Tampar aku sekali lagi dan aku akan membungkammu.",
     "Berhenti menamparku. REEEEEEEEEEEEEE.",
     [
-        "Saya membungkam Anda sebentar.", # balasan normal
-        "Berhenti menamparku hanya karena aku tidak bisa membungkammu. REEEEEEEEEE.", #balas admin
+        "Saya membungkam Anda sebentar.",  # balasan normal
+        "Berhenti menamparku hanya karena aku tidak bisa membungkammu. REEEEEEEEEE.",  # balas admin
         "diam",  # memerintah
         "Diam!",
         "Kesunyian!",
