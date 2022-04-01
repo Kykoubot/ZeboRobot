@@ -7,8 +7,8 @@ import time
 import uuid
 from io import BytesIO
 
-import EmikoRobot.modules.sql.feds_sql as sql
-from EmikoRobot import (
+import ZeboRobot.modules.sql.feds_sql as sql
+from ZeboRobot import (
     EVENT_LOGS,
     LOGGER,
     SUPPORT_CHAT,
@@ -18,15 +18,15 @@ from EmikoRobot import (
     WOLVES,
     dispatcher,
 )
-from EmikoRobot.modules.disable import DisableAbleCommandHandler
-from EmikoRobot.modules.helper_funcs.alternate import send_message
-from EmikoRobot.modules.helper_funcs.chat_status import is_user_admin
-from EmikoRobot.modules.helper_funcs.extraction import (
+from ZeboRobot.modules.disable import DisableAbleCommandHandler
+from ZeboRobot.modules.helper_funcs.alternate import send_message
+from ZeboRobot.modules.helper_funcs.chat_status import is_user_admin
+from ZeboRobot.modules.helper_funcs.extraction import (
     extract_unt_fedban,
     extract_user,
     extract_user_fban,
 )
-from EmikoRobot.modules.helper_funcs.string_handling import markdown_parser
+from ZeboRobot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
@@ -43,7 +43,7 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html, mention_markdown
 
-# Hello bot owner, I spended for feds many hours of my life, Please don't remove this if you still respect MrYacha and peaktogoo and AyraHikari too
+# Hello bot owner, I spended for feds many hours of my life, Please don't remove this if you still respect MrYacha and peaktogoo and ZeboRobot too
 # Federation by MrYacha 2018-2019
 # Federation rework by Mizukito Akito 2019
 # Federation update v2 by Ayra Hikari 2019
