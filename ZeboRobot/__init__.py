@@ -24,7 +24,7 @@ StartTime = time.time()
 
 
 def get_user_list(__init__, key):
-    with open("{}/EmikoRobot/{}".format(os.getcwd(), __init__), "r") as json_file:
+    with open("{}/ZeboRobot/{}".format(os.getcwd(), __init__), "r") as json_file:
         return json.load(json_file)[key]
 
 
