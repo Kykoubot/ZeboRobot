@@ -21,10 +21,10 @@ class Config(object):
     OWNER_USERNAME = "zeafeya"
     SUPPORT_CHAT = "dbzea"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
-        -1001432609692
+        -1001626676042
     )  # Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = (
-        -1001150905176
+        -1001616118955
     )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     # RECOMMENDED
