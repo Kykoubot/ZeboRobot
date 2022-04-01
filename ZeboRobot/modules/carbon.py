@@ -4,9 +4,9 @@ from pyrogram import __version__ as z
 from telethon import __version__ as s
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram import filters
-from EmikoRobot import pbot
-from EmikoRobot.utils.errors import capture_err
-from EmikoRobot.utils.functions import make_carbon
+from ZeboRobot import pbot
+from ZeboRobot.utils.errors import capture_err
+from ZeboRobot.utils.functions import make_carbon
 
 
 @pbot.on_message(filters.command("carbon"))
@@ -45,7 +45,7 @@ async def repo(_, message):
             [
                 [
                     InlineKeyboardButton(
-                        "Repo", url="https://github.com/Kykoubot/Zebobot"
+                        "Repo", url="https://github.com/Kykoubot/ZeboRobot"
                     ),
                     InlineKeyboardButton("Support", url="https://t.me/dbzea"),
                 ]
