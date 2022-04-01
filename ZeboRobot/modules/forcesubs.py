@@ -10,9 +10,9 @@ from pyrogram.errors.exceptions.bad_request_400 import (
 )
 from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
 
-from EmikoRobot import DRAGONS as SUDO_USERS
-from EmikoRobot import pbot
-from EmikoRobot.modules.sql import forceSubscribe_sql as sql
+from ZeboRobot import DRAGONS as SUDO_USERS
+from ZeboRobot import pbot
+from ZeboRobot.modules.sql import forceSubscribe_sql as sql
 
 logging.basicConfig(level=logging.INFO)
 
@@ -204,4 +204,4 @@ Feds are now divided into 3 sections for your ease.
 • `/fedadminhelp`*:* Provides help for fed administration commands
 • `/feduserhelp`*:* Provides help for commands anyone can use
 """
-__mod_name__ = "F-Sub/Feds"
+__mod_name__ = "F-Sub"
