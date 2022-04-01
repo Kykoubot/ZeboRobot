@@ -1,4 +1,4 @@
-import EmikoRobot.modules.sql.locks_sql as sql
+import ZeboRobot.modules.sql.locks_sql as sql
 import html
 import ast
 
@@ -9,19 +9,19 @@ from telegram.ext import CommandHandler, MessageHandler, Filters
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import mention_html
 from alphabet_detector import AlphabetDetector
-from EmikoRobot import dispatcher, DRAGONS, LOGGER
-from EmikoRobot.modules.disable import DisableAbleCommandHandler
-from EmikoRobot.modules.helper_funcs.chat_status import (
+from ZeboRobot import dispatcher, DRAGONS, LOGGER
+from ZeboRobot.modules.disable import DisableAbleCommandHandler
+from ZeboRobot.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from EmikoRobot.modules.sql.approve_sql import is_approved
-from EmikoRobot.modules.log_channel import loggable
-from EmikoRobot.modules.connection import connected
-from EmikoRobot.modules.helper_funcs.alternate import send_message, typing_action
+from ZeboRobot.modules.sql.approve_sql import is_approved
+from ZeboRobot.modules.log_channel import loggable
+from ZeboRobot.modules.connection import connected
+from ZeboRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 
