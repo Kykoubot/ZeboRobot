@@ -1,8 +1,8 @@
 # This file is part of YuiGBot (Telegram Bot)
 # I give credit for this module to YuiGBot.
 
-from EmikoRobot.events import register
-from EmikoRobot import telethn
+from ZeboRobot.events import register
+from ZeboRobot import telethn
 
 TMP_DOWNLOAD_DIRECTORY = "./"
 from telethon import events
