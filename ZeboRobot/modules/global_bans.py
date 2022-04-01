@@ -13,9 +13,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import EmikoRobot.modules.sql.global_bans_sql as sql
-from EmikoRobot.modules.sql.users_sql import get_user_com_chats
-from EmikoRobot import (
+import ZeboRobot.modules.sql.global_bans_sql as sql
+from ZeboRobot.modules.sql.users_sql import get_user_com_chats
+from ZeboRobot import (
     DEV_USERS,
     EVENT_LOGS,
     OWNER_ID,
@@ -29,16 +29,16 @@ from EmikoRobot import (
     sw,
     dispatcher,
 )
-from EmikoRobot.modules.helper_funcs.chat_status import (
+from ZeboRobot.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from EmikoRobot.modules.helper_funcs.extraction import (
+from ZeboRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from EmikoRobot.modules.helper_funcs.misc import send_to_list
+from ZeboRobot.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 
