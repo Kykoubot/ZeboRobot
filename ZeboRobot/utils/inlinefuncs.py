@@ -24,7 +24,7 @@ from pyrogram.types import (
 )
 from search_engine_parser import GoogleSearch
 
-from EmikoRobot import (
+from ZeboRobot import (
     DEV_USERS,
     EVENT_LOGS,
     BOT_USERNAME,
