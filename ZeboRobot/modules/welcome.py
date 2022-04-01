@@ -4,8 +4,8 @@ import re
 import time
 from functools import partial
 from io import BytesIO
-import EmikoRobot.modules.sql.welcome_sql as sql
-from EmikoRobot import (
+import ZeboRobot.modules.sql.welcome_sql as sql
+from ZeboRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -15,19 +15,19 @@ from EmikoRobot import (
     LOGGER,
     dispatcher,
 )
-from EmikoRobot.modules.helper_funcs.chat_status import (
+from ZeboRobot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
-from EmikoRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from EmikoRobot.modules.helper_funcs.msg_types import get_welcome_type
-from EmikoRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from EmikoRobot.modules.helper_funcs.string_handling import (
+from ZeboRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from ZeboRobot.modules.helper_funcs.msg_types import get_welcome_type
+from ZeboRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from ZeboRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from EmikoRobot.modules.log_channel import loggable
-from EmikoRobot.modules.sql.global_bans_sql import is_user_gbanned
+from ZeboRobot.modules.log_channel import loggable
+from ZeboRobot.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
     InlineKeyboardButton,
