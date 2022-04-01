@@ -6,7 +6,7 @@ from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin
 from telethon.tl.types import ChannelParticipantCreator
 
-from EmikoRobot import telethn as client
+from ZeboRobot import telethn as client
 
 spam_chats = []
 
@@ -104,6 +104,6 @@ Zebo Can Be a Mention Bot for your group.
 
 Only admins can tag all.  here is a list of commands
 
-❂ /tagall or @all (reply to message or add another message) To mention all members in your group, without exception.
-❂ /cancel for canceling the mention-all.
+➢ /tagall or @all (reply to message or add another message) To mention all members in your group, without exception.
+➢ /cancel for canceling the mention-all.
 """
