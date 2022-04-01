@@ -4,9 +4,9 @@ from traceback import format_exc
 from pyrogram import filters
 from pyrogram.types import Message
 
-from EmikoRobot import arq
-from EmikoRobot.utils.errors import capture_err
-from EmikoRobot import pbot as app
+from ZeboRobot import arq
+from ZeboRobot.utils.errors import capture_err
+from ZeboRobot import pbot as app
 
 
 async def quotify(messages: list):
