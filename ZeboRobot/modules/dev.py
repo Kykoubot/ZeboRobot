@@ -5,10 +5,10 @@ import sys
 from contextlib import suppress
 from time import sleep
 
-import EmikoRobot
+import ZeboRobot
 
-from EmikoRobot import dispatcher
-from EmikoRobot.modules.helper_funcs.chat_status import dev_plus
+from ZeboRobot import dispatcher
+from ZeboRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import TelegramError, Update
 from telegram.error import Unauthorized
 from telegram.ext import CallbackContext, CommandHandler
@@ -18,13 +18,13 @@ from telegram.ext import CallbackContext, CommandHandler
 def allow_groups(update: Update, context: CallbackContext):
     args = context.args
     if not args:
-        state = "Lockdown is " + "on" if not EmikoRobot.ALLOW_CHATS else "off"
+        state = "Lockdown is " + "on" if not ZeboRobot.ALLOW_CHATS else "off"
         update.effective_message.reply_text(f"Current state: {state}")
         return
     if args[0].lower() in ["off", "no"]:
-        EmikoRobot.ALLOW_CHATS = True
+        ZeboRobot.ALLOW_CHATS = True
     elif args[0].lower() in ["yes", "on"]:
-        EmikoRobot.ALLOW_CHATS = False
+        ZeboRobot.ALLOW_CHATS = False
     else:
         update.effective_message.reply_text("Format: /lockdown Yes/No or Off/On")
         return
