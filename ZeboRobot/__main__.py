@@ -6,12 +6,12 @@ import time
 import re
 import sys
 import traceback
-import EmikoRobot.modules.sql.users_sql as sql
+import ZeboRobot.modules.sql.users_sql as sql
 from sys import argv
 from typing import Optional
 from telegram import __version__ as peler
 from platform import python_version as memek
-from EmikoRobot import (
+from ZeboRobot import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -33,9 +33,9 @@ from EmikoRobot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from EmikoRobot.modules import ALL_MODULES
-from EmikoRobot.modules.helper_funcs.chat_status import is_user_admin
-from EmikoRobot.modules.helper_funcs.misc import paginate_modules
+from ZeboRobot.modules import ALL_MODULES
+from ZeboRobot.modules.helper_funcs.chat_status import is_user_admin
+from ZeboRobot.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -129,7 +129,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("EmikoRobot.modules." + module_name)
+    imported_module = importlib.import_module("ZeboRobot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -364,9 +364,9 @@ def help_button(update, context):
         pass
 
 
-def emiko_about_callback(update, context):
+def zebo_about_callback(update, context):
     query = update.callback_query
-    if query.data == "emiko_":
+    if query.data == "zebo_":
         query.message.edit_text(
             text="๏ I'm *ᴢᴇʙᴏ*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
@@ -383,16 +383,16 @@ def emiko_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Admins", callback_data="emiko_admin"
+                            text="Admins", callback_data="zebo_admin"
                         ),
-                        InlineKeyboardButton(text="Notes", callback_data="emiko_notes"),
+                        InlineKeyboardButton(text="Notes", callback_data="zebo_notes"),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Support", callback_data="emiko_support"
+                            text="Support", callback_data="zebo_support"
                         ),
                         InlineKeyboardButton(
-                            text="Credits", callback_data="emiko_credit"
+                            text="Credits", callback_data="zebo_credit"
                         ),
                     ],
                     [
@@ -403,13 +403,13 @@ def emiko_about_callback(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Go Back", callback_data="emiko_back"
+                            text="Go Back", callback_data="zebo_back"
                         ),
                     ],
                 ]
             ),
         )
-    elif query.data == "emiko_back":
+    elif query.data == "zebo_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
@@ -425,7 +425,7 @@ def emiko_about_callback(update, context):
             disable_web_page_preview=False,
         )
 
-    elif query.data == "emiko_admin":
+    elif query.data == "zebo_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
             "\nCongragulations, ᴢᴇʙᴏ now ready to manage your group."
@@ -438,11 +438,11 @@ def emiko_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="emiko_")]]
+                [[InlineKeyboardButton(text="Go Back", callback_data="zebo_")]]
             ),
         )
 
-    elif query.data == "emiko_notes":
+    elif query.data == "zebo_notes":
         query.message.edit_text(
             text=f"<b>๏ Setting up notes</b>"
             f"\nYou can save message/media/audio or anything as notes"
@@ -450,10 +450,10 @@ def emiko_about_callback(update, context):
             f"\n\nYou can also set buttons for notes and filters (refer help menu)",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="emiko_")]]
+                [[InlineKeyboardButton(text="Go Back", callback_data="zebo_")]]
             ),
         )
-    elif query.data == "emiko_support":
+    elif query.data == "zebo_support":
         query.message.edit_text(
             text="*๏ ᴢᴇʙᴏ support chats*"
             "\nJoin My Support Group/Channel for see or report a problem on Zebo.",
@@ -467,13 +467,13 @@ def emiko_about_callback(update, context):
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
+                        InlineKeyboardButton(text="Go Back", callback_data="zebo_"),
                     ],
                 ]
             ),
         )
 
-    elif query.data == "emiko_credit":
+    elif query.data == "zebo_credit":
         query.message.edit_text(
             text=f"๏ Credis for ᴢᴇʙᴏ\n"
             "\nHere Developers Making And Give Inspiration For Made The Zebo",
@@ -482,10 +482,10 @@ def emiko_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="sena-ex", url="https://github.com/kennedy-ex"
+                            text="ZeaFeya", url="https://github.com/kykoubot"
                         ),
                         InlineKeyboardButton(
-                            text="ᴢᴇᴀ𝖘𝖆𝖓°🇮🇩", url="https://github.com/Kykoubot"
+                            text="Sena-Ex", url="https://github.com/Kennedy-EX"
                         ),
                     ],
                     [
@@ -521,7 +521,7 @@ def emiko_about_callback(update, context):
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
+                        InlineKeyboardButton(text="Go Back", callback_data="zebo_"),
                     ],
                 ]
             ),
@@ -546,7 +546,7 @@ def Source_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="emiko_")]]
+                [[InlineKeyboardButton(text="Go Back", callback_data="zebo_")]]
             ),
         )
     elif query.data == "source_back":
@@ -788,7 +788,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1606221784:
+        if OWNER_ID != 2120344815:
             update.effective_message.reply_text(
                 "I'm free for everyone ❤️ If you wanna make me smile, just join"
                 "[My Channel]({})".format(DONATION_LINK),
@@ -859,7 +859,7 @@ def main():
     )
 
     about_callback_handler = CallbackQueryHandler(
-        emiko_about_callback, pattern=r"emiko_", run_async=True
+        emiko_about_callback, pattern=r"zebo_", run_async=True
     )
 
     source_callback_handler = CallbackQueryHandler(
