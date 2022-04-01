@@ -1,8 +1,8 @@
 from random import randint
 
 import requests as r
-from EmikoRobot import SUPPORT_CHAT, WALL_API, dispatcher
-from EmikoRobot.modules.disable import DisableAbleCommandHandler
+from ZeboRobot import SUPPORT_CHAT, WALL_API, dispatcher
+from ZeboRobot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext
 
