@@ -1,5 +1,5 @@
 from envparse import env
-from EmikoRobot import LOGGER
+from ZeboRobot import LOGGER
 
 DEFAULTS = {
     "LOAD_MODULES": True,
