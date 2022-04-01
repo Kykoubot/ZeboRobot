@@ -12,7 +12,7 @@ from ZeboRobot import telethn
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["emiexrobot"]
+db = client["zeborobot"]
 gbanned = db.gban
 
 
