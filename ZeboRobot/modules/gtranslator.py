@@ -9,9 +9,9 @@ from telegram import (
     InlineKeyboardMarkup,
     InlineKeyboardButton,
 )
-from EmikoRobot import dispatcher, pbot
+from ZeboRobot import dispatcher, pbot
 from pyrogram import filters
-from EmikoRobot.modules.disable import DisableAbleCommandHandler
+from ZeboRobot.modules.disable import DisableAbleCommandHandler
 
 
 __help__ = """ 
