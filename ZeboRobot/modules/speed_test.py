@@ -1,7 +1,7 @@
 import speedtest
-from EmikoRobot import DEV_USERS, dispatcher
-from EmikoRobot.modules.disable import DisableAbleCommandHandler
-from EmikoRobot.modules.helper_funcs.chat_status import dev_plus
+from ZeboRobot import DEV_USERS, dispatcher
+from ZeboRobot.modules.disable import DisableAbleCommandHandler
+from ZeboRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler
 
