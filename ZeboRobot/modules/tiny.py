@@ -1,8 +1,8 @@
 import os
 import cv2
 from PIL import Image
-from EmikoRobot.events import register
-from EmikoRobot import telethn as tbot
+from ZeboRobot.events import register
+from ZeboRobot import telethn as tbot
 
 
 @register(pattern="^/tiny ?(.*)")
