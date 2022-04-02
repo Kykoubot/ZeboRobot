@@ -7,10 +7,10 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton
 
-from EmikoRobot import aiohttpsession as session
-from EmikoRobot import pbot as app
-from EmikoRobot.utils.errors import capture_err
-from EmikoRobot.utils.pastebin import paste
+from ZeboRobot import aiohttpsession as session
+from ZeboRobot import pbot as app
+from ZeboRobot.utils.errors import capture_err
+from ZeboRobot.utils.pastebin import paste
 
 __mod_name__ = "Paste​"
 
