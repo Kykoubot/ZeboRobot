@@ -4,14 +4,14 @@ import nekos
 import requests
 from PIL import Image
 from telegram import ParseMode
-from EmikoRobot import dispatcher, updater
-import EmikoRobot.modules.sql.nsfw_sql as sql
-from EmikoRobot.modules.log_channel import gloggable
+from ZeboRobot import dispatcher, updater
+import ZeboRobot.modules.sql.nsfw_sql as sql
+from ZeboRobot.modules.log_channel import gloggable
 from telegram import Message, Chat, Update, Bot, MessageEntity
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CommandHandler, run_async, CallbackContext
-from EmikoRobot.modules.helper_funcs.filters import CustomFilters
-from EmikoRobot.modules.helper_funcs.chat_status import user_admin
+from ZeboRobot.modules.helper_funcs.filters import CustomFilters
+from ZeboRobot.modules.helper_funcs.chat_status import user_admin
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
 
