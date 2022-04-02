@@ -3,8 +3,8 @@ import random
 import glob
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterPhotos
-from EmikoRobot.events import register
-from EmikoRobot import telethn as tbot, ubot2
+from ZeboRobot.events import register
+from ZeboRobot import telethn as tbot, ubot2
 
 
 def mediainfo(media):
@@ -68,7 +68,7 @@ async def logo_gen(event):
             pics.append(i)
         id_ = random.choice(pics)
         bg_ = await id_.download_media()
-        fpath_ = glob.glob("./EmikoRobot/resources/fonts/*")
+        fpath_ = glob.glob("./ZeboRobot/resources/fonts/*")
         font_ = random.choice(fpath_)
     if not bg_:
         pics = []
@@ -79,7 +79,7 @@ async def logo_gen(event):
         id_ = random.choice(pics)
         bg_ = await id_.download_media()
     if not font_:
-        fpath_ = glob.glob("./EmikoRobot/resources/fonts/*")
+        fpath_ = glob.glob("./ZeboRobot/resources/fonts/*")
         font_ = random.choice(fpath_)
     if len(name) <= 8:
         fnt_size = 120
@@ -122,7 +122,7 @@ async def logo_gen(event):
     if os.path.exists(bg_):
         os.remove(bg_)
     if os.path.exists(font_):
-        if not font_.startswith("./EmikoRobot/resources/fonts"):
+        if not font_.startswith("./ZeboRobot/resources/fonts"):
             os.remove(font_)
 
 
@@ -152,7 +152,7 @@ async def logo_(event):
             pics.append(i)
         id_ = random.choice(pics)
         bg_ = await id_.download_media()
-        fpath_ = glob.glob("./EmikoRobot/resources/fonts/*")
+        fpath_ = glob.glob("./ZeboRobot/resources/fonts/*")
         font_ = random.choice(fpath_)
     if not bg_:
         pics = []
@@ -163,7 +163,7 @@ async def logo_(event):
         id_ = random.choice(pics)
         bg_ = await id_.download_media()
     if not font_:
-        fpath_ = glob.glob("./EmikoRobot/resources/fonts/*")
+        fpath_ = glob.glob("./ZeboRobot/resources/fonts/*")
         font_ = random.choice(fpath_)
     if len(name) <= 8:
         fnt_size = 105
@@ -206,7 +206,7 @@ async def logo_(event):
     if os.path.exists(bg_):
         os.remove(bg_)
     if os.path.exists(font_):
-        if not font_.startswith("./EmikoRobot/resources/fonts"):
+        if not font_.startswith("./ZeboRobot/resources/fonts"):
             os.remove(font_)
 
 
