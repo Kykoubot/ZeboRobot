@@ -13,7 +13,7 @@ from ZeboRobot.confing import get_int_key, get_str_key
 from ZeboRobot.services.telethonbasics import is_admin
 from ZeboRobot.events import register
 from pymongo import MongoClient
-from EmikoRobot.modules.sql.nsfw_watch_sql import (
+from ZeboRobot.modules.sql.nsfw_watch_sql import (
     add_nsfwatch,
     get_all_nsfw_enabled_chat,
     is_nsfwatch_indb,
