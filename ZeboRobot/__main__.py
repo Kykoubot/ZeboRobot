@@ -95,7 +95,7 @@ Feel free to add me to your group. ✨
 
 buttons = [
     [
-        InlineKeyboardButton(text="About ᴢᴇʙᴏ", callback_data="emiko_"),
+        InlineKeyboardButton(text="About ᴢᴇʙᴏ", callback_data="zebo_"),
     ],
     [
         InlineKeyboardButton(text="❓ Help", callback_data="help_back"),
