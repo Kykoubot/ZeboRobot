@@ -1,8 +1,8 @@
 import math
 
 import pynewtonmath as newton
-from EmikoRobot import dispatcher
-from EmikoRobot.modules.disable import DisableAbleCommandHandler
+from ZeboRobot import dispatcher
+from ZeboRobot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
