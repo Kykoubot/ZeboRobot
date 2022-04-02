@@ -398,7 +398,7 @@ def zebo_about_callback(update, context):
                     [
                         InlineKeyboardButton(
                             text="Source Code",
-                            url="https://github.com/kykoubot/Zebobot",
+                            url="https://github.com/kykoubot/ZeboRobot",
                         ),
                     ],
                     [
