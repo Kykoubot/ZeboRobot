@@ -3,14 +3,14 @@ from io import BytesIO
 import random
 from typing import Optional
 
-import EmikoRobot.modules.sql.notes_sql as sql
-from EmikoRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
-from EmikoRobot.modules.disable import DisableAbleCommandHandler
-from EmikoRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from EmikoRobot.modules.helper_funcs.chat_status import user_admin, connection_status
-from EmikoRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from EmikoRobot.modules.helper_funcs.msg_types import get_note_type
-from EmikoRobot.modules.helper_funcs.string_handling import (
+import ZeboRobot.modules.sql.notes_sql as sql
+from ZeboRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
+from ZeboRobot.modules.disable import DisableAbleCommandHandler
+from ZeboRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from ZeboRobot.modules.helper_funcs.chat_status import user_admin, connection_status
+from ZeboRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from ZeboRobot.modules.helper_funcs.msg_types import get_note_type
+from ZeboRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
 )
 from telegram import (
