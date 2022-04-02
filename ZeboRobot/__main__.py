@@ -84,7 +84,6 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 *Hello {} !*
 ✪ I am ᴢᴇʙᴏ manager bot and music in telegram with some useful features.
-Supporting platforms such as Youtube, Spotify, Resso, AppleMusic, Soundcloud etc.
 Feel free to add me to your group. ✨
 ────────────────────────
 × *Uptime:* `{}`
