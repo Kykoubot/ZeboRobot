@@ -2,8 +2,8 @@ from asyncio import Lock, create_task
 from time import time
 from pyrogram import filters
 from pyrogram.types import Message
-from EmikoRobot import BOT_ID, BOT_USERNAME, DEV_USERS
-from EmikoRobot.services.sections import bold, section, w
+from ZeboRobot import BOT_ID, BOT_USERNAME, DEV_USERS
+from ZeboRobot.services.sections import bold, section, w
 
 tasks = {}
 TASKS_LOCK = Lock()
