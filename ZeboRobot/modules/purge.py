@@ -2,8 +2,8 @@ import asyncio
 import time
 from telethon import events
 
-from EmikoRobot import telethn
-from EmikoRobot.modules.helper_funcs.telethn.chatstatus import (
+from ZeboRobot import telethn
+from ZeboRobot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
