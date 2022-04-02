@@ -137,7 +137,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from EmikoRobot.config import Development as Config
+    from ZeboRobot.config import Development as Config
 
     TOKEN = Config.TOKEN
 
@@ -232,7 +232,7 @@ else:
         sw = None
         LOGGER.warning("Can't connect to SpamWatch!")
 
-from EmikoRobot.modules.sql import SESSION
+from ZeboRobot.modules.sql import SESSION
 
 defaults = tg.Defaults(run_async=True)
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
@@ -303,7 +303,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from EmikoRobot.modules.helper_funcs.handlers import (
+from ZeboRobot.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
