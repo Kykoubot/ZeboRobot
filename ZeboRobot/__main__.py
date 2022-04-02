@@ -836,7 +836,7 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             dispatcher.bot.sendMessage(
-                f"@{SUPPORT_CHAT}", "Hi, i'm alive.✨", parse_mode=ParseMode.MARKDOWN
+                f"@{SUPPORT_CHAT}", "Hi, i'm alive.🥰", parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
             LOGGER.warning(
@@ -859,7 +859,7 @@ def main():
     )
 
     about_callback_handler = CallbackQueryHandler(
-        emiko_about_callback, pattern=r"zebo_", run_async=True
+        zebo_about_callback, pattern=r"zebo_", run_async=True
     )
 
     source_callback_handler = CallbackQueryHandler(
