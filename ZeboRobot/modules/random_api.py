@@ -51,7 +51,7 @@ from pyrogram import filters
 from ZeboRobot import TEMP_DOWNLOAD_DIRECTORY, pbot
 
 
-@pbot.on_message(filters.command("boobs"))
+@pbot.on_message(filters.command("bbboobs"))
 async def boobs(client, message):
     if not os.path.isdir(TEMP_DOWNLOAD_DIRECTORY):
         os.makedirs(TEMP_DOWNLOAD_DIRECTORY)
