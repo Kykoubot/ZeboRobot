@@ -2,7 +2,7 @@ FROM python:3.9.7-slim-buster
 
 RUN apt update && apt-get upgrade -y
 
-RUN apt install -y ffmpeg python3-pip curl
+RUN apt install git curl python3-pip ffmpeg -y
 RUN python3 -m pip install --upgrade pip
 
 COPY . .
