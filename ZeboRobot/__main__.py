@@ -82,14 +82,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hello {} !*
+*👋 Hey there {} !*
 ✪ I am ᴢᴇʙᴏ manager bot and music in telegram with some useful features.
-Feel free to add me to your group. ✨
+Feel free to add me to your group. [✨](https://telegra.ph/file/39e8b5f1aa95f40922bbe.jpg)
 ────────────────────────
-× *Uptime:* `{}`
-× `{}` *users, across* `{}` *chats.*
+ *Uptime:* `{}`
+ `{}` *users, across* `{}` *chats.*
 ────────────────────────
-✪ Hit /help, maintenance by @zeafeya. 
+ Hit /help, maintenance by @zeafeya. 
 """
 
 buttons = [
