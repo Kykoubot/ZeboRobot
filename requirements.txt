@@ -67,7 +67,7 @@ search_engine_parser
 pytz
 jikanpy
 tswift
-python-arq
+python-arq==6.0.5
 envparse
 #profanity (Credits to Julia)
 better_profanity
