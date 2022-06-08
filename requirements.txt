@@ -5,8 +5,8 @@ wget
 gtts
 beautifulsoup4
 requests
-python-telegram-bot==13.11
-SQLAlchemy==1.4.36
+python-telegram-bot==13.12
+SQLAlchemy==1.4.37
 psycopg2-binary
 feedparser
 faker
@@ -24,7 +24,6 @@ aiohttp
 Pillow
 CurrencyConverter
 googletrans==4.0.0rc1
-gpytranslate==1.4.0
 google-trans-new
 jikanpy
 speedtest-cli
@@ -76,6 +75,7 @@ textblob
 nudepy
 nekos.py
 motor
+gpytranslate
 fontTools
 opencv-python-headless
 odmantic
