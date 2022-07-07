@@ -977,7 +977,7 @@ def bug_reporting(update: Update, _: CallbackContext):
 
 __help__ = """
 *User Commands*:
-➢ /staff*:* list of admins in the chat
+➢ /admins*:* list of admins in the chat
 ➢ /pinned*:* to get the current pinned message.
 
 *The Following Commands are Admins only:* 
@@ -1019,7 +1019,7 @@ SETCHAT_TITLE_HANDLER = CommandHandler(
     "setgtitle", setchat_title, filters=Filters.chat_type.groups, run_async=True
 )
 
-ADMINLIST_HANDLER = DisableAbleCommandHandler("staff", adminlist, run_async=True)
+ADMINLIST_HANDLER = DisableAbleCommandHandler("admins", adminlist, run_async=True)
 BUG_HANDLER = DisableAbleCommandHandler("bug", bug_reporting, run_async=True)
 
 PIN_HANDLER = CommandHandler(
@@ -1069,7 +1069,7 @@ dispatcher.add_handler(ADMIN_REFRESH_HANDLER)
 __mod_name__ = "Admins"
 __command_list__ = [
     "setdesc" "setsticker" "setgpic" "delgpic" "setgtitle" "admins",
-    "staff",
+    "admins",
     "invitelink",
     "promote",
     "fullpromote",
