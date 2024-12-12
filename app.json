@@ -47,7 +47,7 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "2120344815"
+         "value": "8020761278"
      },
 
       "STRING_SESSION": {
@@ -75,7 +75,7 @@
 
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "zeafeya"
+         "value": "Errorcode45UU"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
@@ -125,7 +125,7 @@
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
          "required": false,
-         "value": "1645172223"
+         "value": "8020761278"
      },
       "ERROR_LOG": {
          "description": "ID of log for show error.",
@@ -149,22 +149,22 @@
       "DRAGONS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users.",
          "required": false,
-         "value": ""
+         "value": "8020761278"
       },
       "DEMONS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
          "required": false,
-         "value": "2120344815 1645172223"
+         "value": "8020761278"
       },
       "TIGERS": {
          "description": "A space separated list of user IDs who you wanna assign as tiger users.",
          "required": false,
-         "value": "2120344815 1645172223"
+         "value": "8020761278"
       },
       "WOLVES": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
          "required": false,
-         "value": "2120344815 1645172223"
+         "value": "8020761278"
       },
       "ENV": {
          "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
