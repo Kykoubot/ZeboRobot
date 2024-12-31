@@ -89,7 +89,7 @@ Feel free to add me to your group. [✨](https://telegra.ph/file/39e8b5f1aa95f40
  *Uptime:* `{}`
  `{}` *users, across* `{}` *chats.*
 ────────────────────────
- Hit /help, maintenance by @errorcode45UU. 
+ Hit /help, maintenance by @errorcode45U. 
 """
 
 buttons = [
@@ -113,7 +113,7 @@ Click on the button bellow to get description about specifics command."""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @errorcode45UU \
+ You can support the project by contacting @errorcode45U \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
