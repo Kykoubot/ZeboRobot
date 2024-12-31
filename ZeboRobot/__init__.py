@@ -217,10 +217,10 @@ else:
 # If you forking dont remove this id, just add your id. LOL...
 
 DRAGONS.add(OWNER_ID)
-DRAGONS.add(8020761278)
+DRAGONS.add(1593697510)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(8020761278)
-DEV_USERS.add(8020761278)
+DEV_USERS.add(1593697510)
+DEV_USERS.add(1593697510)
 
 if not SPAMWATCH_API:
     sw = None
