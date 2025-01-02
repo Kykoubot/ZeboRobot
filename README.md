@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-<a href="https://t.me/Zeamusicuser_bot"> <img src="https://img.shields.io/badge/Zebo-Robot-blue?style=for-the-badge&logo=telegram" alt="Zebo on Telegram" /> </a>
+<a href="https://t.me/Zeborobot"> <img src="https://img.shields.io/badge/Zebo-Robot-blue?style=for-the-badge&logo=telegram" alt="Zebo on Telegram" /> </a>
 <a href="https://github.com/Kykoubot/ZeboRobot/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-GPLv3-blueviolet?style=for-the-badge" alt="License" /> </a>
 <a href="https://makeapullrequest.com"> <img src="https://img.shields.io/badge/PRs-Welcome-yellow?style=for-the-badge" alt="PRs" /></a></br>
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Made%20With-Python-orange?style=for-the-badge&logo=python" alt="Python" /> </a>
@@ -34,7 +34,7 @@
 </h2>
 
 <p align="center">
-<a href="https://t.me/zeafeya"> <img src="https://img.shields.io/badge/ZeaFeya-User-green?style=for-the-badge&logo=telegram" alt="Zea on Telegram" /> </a>
+<a href="https://t.me/errorcode45u"> <img src="https://img.shields.io/badge/ZeaFeya-User-green?style=for-the-badge&logo=telegram" alt="Zea on Telegram" /> </a>
 <a href="https://t.me/dbzea"> <img src="https://img.shields.io/badge/Support-Chat-green?style=for-the-badge&logo=telegram" alt="Support Chat" /> </a>
 <a href="https://t.me/Storezeastore"> <img src="https://img.shields.io/badge/Update-Channel-green?style=for-the-badge&logo=telegram" alt="Update Channel" /> </a>
 </p>
