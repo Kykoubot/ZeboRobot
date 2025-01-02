@@ -65,7 +65,7 @@
       },
       "BOT_USERNAME": {
          "description": "username of your bot without the @",
-         "value": "zeamusicuser_bot"
+         "value": "zeborobot"
       },
 
       "BOT_ID": {
